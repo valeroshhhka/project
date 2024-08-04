@@ -1,0 +1,118 @@
+.hero {
+  display: block;
+  position: relative;
+  background: linear-gradient(to bottom, #68B738  66%, #ffffff 34%);
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    padding-left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 584px;
+    margin-bottom: 82px;
+    padding-top: 110px;
+    background: linear-gradient(to right, #ffffff 50% ,#68B738  50%);
+  }
+
+
+  &::before {
+    content:"" ;
+    position: absolute;
+    background-image: url("../../img/index-can-mobile.png");
+    width: 280px ;
+    height: 270px;
+    background-repeat: no-repeat;
+    bottom: 26px;
+    right: 20px;
+    z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      z-index: -1;
+      top: 230px;
+      left: 132px;
+      width: 709px ;
+      height: 609px;
+      background-image: url(../../img/index-can.png);
+    }
+
+    @media (min-width: @desktop-width) {
+      z-index: 0;
+      top: 76px;
+      left: 561px;
+    }
+  }
+
+  &::after {
+    content:"" ;
+    position: absolute;
+    background-image: url("../../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 302px;
+    top: 0;
+    opacity: 0.1;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      background-image: url(../../img/index-background-desktop.png);
+      width: 700px;
+      height: 694px;
+      left: 720px;
+    }
+  }
+
+  &__button {
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      padding: 18px 22px;
+      margin-bottom: 426px;
+    }
+  }
+
+
+  &__title {
+    position: relative;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: @white;
+    z-index: 2;
+    padding-top: 27px;
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      color: @black;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 302px;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: @white;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 52px;
+      font-size: 20px;
+      line-height: 20px;
+      color: @black;
+      text-align: left;
+    }
+  }
+}

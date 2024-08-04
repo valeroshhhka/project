@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    padding: 0 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: 0 110px;
+    margin-bottom: -65px;
+    z-index: 1;
+  }
+
+  &--catalog {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 75px;
+    }
+  }
+
+  &--form {
+    border-bottom: 1px solid #f2f2f2;
+
+    @media (min-width: @tablet-width) {
+     border-bottom: none;
+     margin-bottom: 45px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 75px;
+    }
+  }
+
+
+  &__nav {
+    position: relative;
+    width: auto;
+    min-height: 65px;
+    align-items: center;
+/*
+    &--closed .header__list {
+      display: none;
+    }
+ */
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    @media (min-width: @tablet-width){
+        display: flex;
+        gap: 33px;
+    }
+
+    @media (min-width: @desktop-width) {
+      gap: 31px;
+    }
+  }
+
+
+  &__link {
+    font-family: Oswald;
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width){
+     font-size: 18px;
+     line-height: 24px;
+     text-transform: uppercase;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      color: @white;
+    }
+
+    &--catalog {
+      @media (min-width: @desktop-width) {
+        color: @black;
+      }
+    }
+  }
+
+  &__logo-pic {
+    margin-right: 56px;
+
+
+    @media (min-width: @tablet-width){
+      margin-right: 13px;
+    }
+  }
+
+  &__logo {
+    @media (min-width: @tablet-width){
+      margin-right: 120px;
+    }
+
+    @media (min-width: @desktop-width){
+      margin-right: 601px;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    width: 38px;
+    height: 38px;
+    background-color: @white;
+    cursor: pointer;
+    border: none;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      top: 10px;
+      right: 0;
+      background-color: @black;
+      box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
+    }
+  }
+}
+
+

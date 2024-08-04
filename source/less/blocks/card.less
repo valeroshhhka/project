@@ -1,0 +1,181 @@
+.card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  padding: 20px 20px 25px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+   padding: 0 ;
+  }
+
+  &__list {
+    @media (min-width: @tablet-width) {
+     margin-bottom: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 169px;
+      padding: 0 35px;
+    }
+  }
+
+  &--more {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+
+    @media (min-width: @tablet-width) {
+      padding: 50px 35px 20px 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding:  30px 20px 20px 20px;
+    }
+
+
+
+    &__title {
+      @media (min-width: @tablet-width) {
+      font-family: Oswald;
+      text-transform: uppercase;
+      width: 134px;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 23px;
+      }
+    }
+
+    svg {
+      height: 30px;
+      width: 30px;
+      margin-bottom: 25px;
+
+      @media (min-width: @tablet-width) {
+        height: 60px;
+        width: 60px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__image {
+    @media (min-width: @tablet-width) {
+      padding: 0 35px;
+      margin-bottom: 13px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 38px ;
+     }
+
+    &--one,
+    &--three,
+    &--five,
+    &--seven {
+      @media (min-width: @tablet-width) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+
+  &__title {
+    width: 76px;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: @black;
+    margin-bottom: 8px;
+
+    @media (min-width: @tablet-width) {
+      width: 135px;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 21px;
+      padding: 0 57px;
+    }
+  }
+
+  &__description {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 21px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 82px;
+      width: 165px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      border-bottom: 1px solid #CDCDCD
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 0 ;
+    background-color: @green;
+    text-align: center;
+    color: @white;
+    font-family: Oswold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    width: 280px;
+
+    &--tablet {
+      @media (min-width: @tablet-width) {
+      width: 250px;
+      margin-top: 32px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 169px;
+        margin-left: 35px;
+        margin-bottom: 40px;
+      }
+    }
+
+
+    &--default {
+      background: #F2F2F2;
+      color: #444444;
+      margin-bottom: 20px;
+
+      @media (min-width: @tablet-width) {
+      margin-top: 0;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 169px;
+      }
+    }
+  }
+}
+
+

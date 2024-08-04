@@ -1,0 +1,120 @@
+.advantages {
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width){
+    padding: 0 110px;
+  }
+
+  &__list {
+    display: grid;
+    margin-bottom: 49px;
+
+    @media (min-width: @tablet-width){
+      position: relative;
+      grid-template-columns: 247px 247px;
+      column-gap: 153px;
+      z-index: 1;
+    }
+
+    @media (min-width: @desktop-width){
+      grid-template-columns: 230px 230px 230px 230px;
+      column-gap: 94px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      height: 280px;
+    }
+  }
+
+  &__description {
+    padding-left: 80px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 0;
+      padding-top: 90px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      font-family: Oswald;
+      width: 80px;
+      height: 80px;
+      font-size: 280px;
+      color: @beige;
+    }
+
+    &--one {
+      background-image: url(../../img/adwantages-one.svg);
+
+      @media (min-width: @tablet-width) {
+        &::before{
+          position: absolute;
+          z-index: -1;
+          content:"1";
+          left: 117px;
+          top: 100px;
+        }
+      }
+    }
+
+    &--two {
+      background-image: url(../../img/advantages-two.svg);
+
+      @media (min-width: @tablet-width) {
+        &::before{
+          content:"2" ;
+          position: absolute;
+          z-index: -1;
+          left: 95px;
+          top: 100px;
+        }
+      }
+    }
+
+    &--three {
+      background-image: url(../../img/advantages-three.svg);
+
+      @media (min-width: @tablet-width) {
+        &::before {
+          content:"3" ;
+          position: absolute;
+          z-index: -1;
+          left: 115px;
+          top: 95px;
+        }
+      }
+    }
+
+    &--four {
+      background-image: url(../../img/advantages-four.svg);
+
+      @media (min-width: @tablet-width) {
+        &::before{
+          content:"4" ;
+          position: absolute;
+          z-index: -1;
+          left: 105px;
+          top: 95px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

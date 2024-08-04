@@ -1,0 +1,129 @@
+.program {
+  padding: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: @black;
+    margin-bottom: 30px;
+    margin-left: 75px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    @media (min-width: @desktop-width) {
+     margin-bottom: 73px;
+     text-align: center;
+    }
+  }
+
+  &__link {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: @black;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 29px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    background-color: @beige;
+    margin-bottom: 20px;
+    padding: 20px 30px 33px 18px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 52px;
+      padding-top: 77px;
+      padding-right: 316px;
+      padding-bottom: 53px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 61px;
+      padding-bottom: 55px;
+    }
+
+    @media (min-width: @tablet-width) {
+      &--slim .program__icon {
+        position: absolute;
+        right: 40px;
+
+        svg {
+          width: 200px;
+          height: 211px;
+        }
+
+        @media (min-width: @desktop-width) {
+          left: 52px;
+          top: 47px;
+
+          svg {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+
+      &--pro .program__icon {
+        position: absolute;
+        right: 10px;
+
+        svg {
+          width: 268px;
+          height: 200px;
+        }
+
+        @media (min-width: @desktop-width) {
+          left: 30px;
+          top: 47px;
+          svg {
+            width: 134px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+  }
+
+  @media (min-width: @desktop-width) {
+    .program__list {
+      display: grid;
+      grid-template-columns:570px 570px;
+      column-gap: 80px;
+      padding: 0 110px;
+    }
+  }
+}
+
+
+
+
+
